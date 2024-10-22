@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --background: #252525;
+  --foreground: rgba(238, 238, 238, 0.815);
+}
+
+.light {
+  --foreground: black;
+  --background: rgba(231, 231, 231, 0.884);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  transition: all ease 1s;
+  font-family: sans-serif;
+}
+
+#img {
+  word-wrap: normal;
+  float: right;
+}
